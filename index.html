@@ -9,6 +9,9 @@
     <title>Curso CSS</title>
 </head>
 <body>
+   <nav id="main-navbar">
+       <h1>Barra de Navegação</h1>
+   </nav> 
     <div class="container">
         <h1>Olá Mundo!
             <p>
@@ -25,29 +28,51 @@
         </ul>
     </aside>
 <!--Formulários-->
-<form action="form.php" method="POST" class="main-form">
-    <div class="form-group">
-        <LABEl>Primeiro Nome</LABEl>
-        <input type="text" placeholder="Digite seu primeiro nome">
-    </div class="form-group">
-<br>
-    <div class="form-group">
-        <LABEl>Sobrenome</LABEl>
-        <input type="text" placeholder="Digite seu sobrenome">
-    </div>
-<br>
-    <div class="form-group">
-        <LABEl>Email</LABEl>
-        <input type="email" placeholder="digite seu email">
-    </div>
-<br>
-<div class="form-group">
-    <LABEl>Mensagem</LABEl>
-    <textarea name="mensagem" ></textarea>
+<div class="box">
+    <form action="form.php" method="POST" class="main-form">
+            <div class="form-group">
+                <LABEl>Primeiro Nome</LABEl>
+                <input type="text" placeholder="Digite seu primeiro nome">
+            </div class="form-group">
+        <br>
+            <div class="form-group">
+                <LABEl>Sobrenome</LABEl>
+                <input type="text" placeholder="Digite seu sobrenome">
+            </div>
+        <br>
+            <div class="form-group">
+                <LABEl>Email</LABEl>
+                <input type="email" placeholder="digite seu email">
+            </div>
+        <br>
+                <div class="form-group">
+                <LABEl>Mensagem</LABEl>
+                <textarea name="mensagem" ></textarea>
+            </div>    
+            <input type="submit" class="buttom">
+        
+    </ form>
 </div>
 
-<input type="submit" class="buttom">
+<br>
+<div class="box relative">
+    <div class="absolute">
+        <h1>Hello World!</h1>
+    </div>
 
+</div>
+
+    <button class="fixed-buttom"></button>
+
+<div class="box categories">
+    <h2>Categorias</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+</div>
 </form>
 </body>
 </html>

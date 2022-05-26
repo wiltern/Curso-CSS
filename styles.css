@@ -1,7 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    
+    margin: 0%;
 }
 
 .container {
@@ -11,12 +14,12 @@ body {
     box-sizing: border-box;
     margin: auto;
 
-    padding-top: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 60px;
+    padding-top: auto;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: auto;
     /* Mesma coisa */
-    padding: 60px;
+    padding: auto; 
 
     border: 3px solid red;
     /*top, left, right e bottom podem ser usadas de forma isolada também*/
@@ -60,6 +63,8 @@ body {
 
 .main-form .form-group input {
     padding: 10px;
+    width: 100%;
+
 }
 
 .main-form .form-group {
@@ -76,3 +81,80 @@ body {
     color: #eee;
     border: none;
 }
+
+.box {
+    width: 80%;
+    margin: auto;
+
+}
+
+/* Positions*/
+.relative{
+    position: relative;
+    border: 3px solid #333;
+    height: 500px;
+    border-radius: 7px;
+}
+
+.relative .absolute {
+    position: absolute;
+    bottom: 0;
+
+}
+
+.relative.absolute h1 {
+    margin: 0%;
+}
+
+/* Barra de Navegação*/
+#main-navbar {
+    background: #333;
+    color: #eee;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0%;
+} 
+
+/* Fixed Buttom*/
+.fixed-buttom {
+    background: #333;
+    color: #eee;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;   
+    bottom: 0;
+    right: 0%;
+    margin: 20px;
+}
+
+/*Categories */
+
+.categories ul{
+    list-style: none;
+}
+
+.categories ul li:first-child{
+    color: red;
+}
+
+.categories ul li:last-child{
+    color: green;
+}
+
+.categories ul li:nth-child(3){
+    color:aqua;
+}
+
+/*
+As pseudo-classes também podem ser inclusas por ordenação par e impar
+
+.categories ul li:nth-child(even){
+    color: red;
+}
+
+.categories ul li:nth-child(odd){
+    color: blue;
+}*/
