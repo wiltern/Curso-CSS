@@ -1,0 +1,78 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    
+}
+
+.container {
+    background-color: #333;
+    color: #eee;
+    width: 80%;
+    box-sizing: border-box;
+    margin: auto;
+
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    /* Mesma coisa */
+    padding: 60px;
+
+    border: 3px solid red;
+    /*top, left, right e bottom podem ser usadas de forma isolada também*/
+
+}
+
+.main-inside h2 {
+    text-align: center
+    ;
+}
+
+
+.main-inside h2:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.main-inside ul {
+    list-style-type: nope;
+    text-align: center;
+    padding: 0%;
+}
+
+.main-inside ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-inside ul a:hover{
+    color: red;
+}
+
+.main-inside ul a:visited {
+    color: green;
+}
+
+/* Formulários */
+.main-form {
+    padding: left 20px;
+}
+
+.main-form .form-group input {
+    padding: 10px;
+}
+
+.main-form .form-group {
+    padding bottom: 10px;
+}
+
+.main-form .form-group label {
+    display: block;
+}
+
+.buttom {
+    padding: 15px;
+    background-color: #333;
+    color: #eee;
+    border: none;
+}
